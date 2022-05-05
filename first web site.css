@@ -1,0 +1,274 @@
+/**********************dafeaults*****************/
+nav,
+header,
+footer {
+    display:block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+label{
+    font-size:32px;
+    color: orange;
+    font-weight: bold;
+}
+
+p{
+    font-size:20px;
+    line-height:1.1;
+}
+
+article p {
+    font-size:24px;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    margin: auto;
+    padding-top:4%;
+    padding-bottom:4%;
+}
+
+.row {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.row::after{
+    display: table;
+    clear:both;
+    content:"";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing:border-box;
+}
+
+/****** NAV BARS ********/
+ nav {
+     width: 100%;
+     margin: 0;
+ }
+
+ nav ul{
+     overflow:hidden;
+     margin: 0;
+     background-color:crimson;
+     padding:5px;
+ }
+
+ ul.topnav li{
+    list-style:none;
+    float:left;
+ }
+
+ ul.topnav li.topnav-right{
+     float:right;
+ }
+
+ ul.topnav li a{
+    text-decoration: none;
+    min-height: 16px;
+    display:block;
+    padding:10px;
+    text-align:center;
+    text-transform:uppercase;
+    color: white;
+ }
+
+ ul.topnav li a:hover{
+    background-color: black;
+    color: orange;
+ }
+
+ ul.topnav li.dropdownIcon {
+     display:none;
+ }
+
+ footer.footsy li:hover{
+     color:chocolate;
+     background-color: black;
+ }
+
+/******* CUSTOM STYLES ************/
+
+#section-1-gradient{
+    background: linear-gradient(crimson,white);
+}
+
+div.box {
+    background-color:white;
+    padding: 36px 24px 40px 24px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    text-align:center;
+    border-radius:7px;
+    margin:20px;
+}
+
+button{
+    font-size:24px;
+    color:white;
+    background-color: black;
+    padding: 15px 60px;
+    margin:5px;
+    text-align:center;
+    border-radius:7px;
+    font-weight:700;
+    display:block;
+}
+
+button.learnMore{
+    display:block;
+    margin:auto;
+}
+
+div.henrySymbol img{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    margin: auto;
+    display: block;
+}
+
+div.leftSide-col{
+    margin-left:17%;
+}
+
+div.rightSide-col{
+    margin-left:5%;
+    margin-top:7%;
+}
+
+h1.large{
+    color:black;
+    font-size:56px;
+    margin:0;
+    line-height: 70px;
+}
+
+h1.section2header{
+    font-size:56px;
+    text-align:center;
+    color:coral;
+}
+
+input[type="text"]{
+    font-size:20px;
+    width:400px;
+    min-width:100px;
+    padding:5px;
+    border-radius:10px;
+
+}
+
+form h2{
+    color: purple;
+}
+
+footer.footsy{
+    background-color:gray;
+    padding-left:10%;
+}
+
+footer.footsy h1{
+    color:white;
+    font-size:35px;
+}
+
+footer.footsy ul{
+    list-style:none;
+    text-align:left; 
+    padding-left:0;
+}
+
+footer.footsy ul li{
+    color:crimson;
+    font-size:20px;
+    line-height:1.5; 
+}
+
+ /********** MOBILE ***********/
+
+ @media screen and (max-width:680px){
+     ul.topnav li:not(:nth-child(1)){
+         display:none;
+     }
+
+     h1.section2header{
+         font-size:56px;
+     }
+
+
+     ul.topnav li.dropdownIcon{
+         display:block;
+         float:right;
+     }
+
+     ul.topnav.responsive li.dropdownIcon{
+         position:absolute;
+         top:0;
+         right:0;
+     }
+
+     ul.topnav.responsive {
+         position:relative;
+     }
+     
+     ul.topnav.responsive li {
+         display: inline;
+         float:none;
+     }
+
+     ul.topnav.responsive li a {
+         display:block;
+         text-align: left;
+     }
+
+     .col-7,
+     .col-6,
+     .col-5,
+     .col-4{
+         margin:0;
+         width:100%;
+     }
+
+     div.mobileStack{
+         display:block;
+         width:50%;
+         
+     }
+
+     div.box{
+         display:block;
+         padding:5px;
+     }
+
+     input[type="text"]{
+         width:350px;
+     }
+
+     .videoContainer iframe{
+         width:100%;
+         position:relative;
+         margin:0;
+         overflow:hidden;
+     }
+ }
